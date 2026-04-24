@@ -1,0 +1,36 @@
+{
+  "items": [
+    {
+      "title": "Portland, OR, United States",
+      "id": "here:cm:namedplace:21037162",
+      "resultType": "locality",
+      "localityType": "city",
+      "address": {
+        "label": "Portland, OR, United States",
+        "countryCode": "USA",
+        "countryName": "United States",
+        "stateCode": "OR",
+        "state": "Oregon",
+        "county": "Multnomah",
+        "city": "Portland",
+        "postalCode": "97201"
+      },
+      "position": {
+        "lat": 45.51179,
+        "lng": -122.67563
+      },
+      "mapView": {
+        "west": -122.92923,
+        "south": 45.37305,
+        "east": -122.45333,
+        "north": 45.80856
+      },
+      "scoring": {
+        "queryScore": 1.0,
+        "fieldScore": {
+          "city": 1.0
+        }
+      }
+    }
+  ]
+}

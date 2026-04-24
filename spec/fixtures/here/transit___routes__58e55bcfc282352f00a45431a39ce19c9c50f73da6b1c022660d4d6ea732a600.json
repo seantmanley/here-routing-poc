@@ -1,0 +1,1141 @@
+{
+  "routes": [
+    {
+      "id": "R0",
+      "sections": [
+        {
+          "id": "R0-S0",
+          "type": "pedestrian",
+          "travelSummary": {
+            "duration": 600,
+            "length": 616
+          },
+          "departure": {
+            "time": "2026-04-24T06:21:00-07:00",
+            "place": {
+              "type": "place",
+              "location": {
+                "lat": 45.51179,
+                "lng": -122.67563
+              }
+            }
+          },
+          "arrival": {
+            "time": "2026-04-24T06:31:00-07:00",
+            "place": {
+              "name": "SW 6th & Columbia",
+              "type": "station",
+              "location": {
+                "lat": 45.514267,
+                "lng": -122.681095
+              },
+              "wheelchairAccessible": "yes",
+              "id": "3930_6278",
+              "code": "11486",
+              "url": "https://trimet.org/home/stop/11486",
+              "description": "Northbound stop in Portland (Stop ID 11486)"
+            }
+          },
+          "polyline": "BG-m652Ch7w_pH6ViMoQ_gCgPj6BkS7iCoGvWgK3mBwRv-BsEnQkN_xBqiBoT",
+          "transport": {
+            "mode": "pedestrian"
+          }
+        },
+        {
+          "id": "R0-S1",
+          "type": "transit",
+          "travelSummary": {
+            "duration": 360,
+            "length": 1337
+          },
+          "departure": {
+            "time": "2026-04-24T06:31:00-07:00",
+            "place": {
+              "name": "SW 6th & Columbia",
+              "type": "station",
+              "location": {
+                "lat": 45.514267,
+                "lng": -122.681095
+              },
+              "wheelchairAccessible": "yes",
+              "id": "3930_6278",
+              "code": "11486",
+              "url": "https://trimet.org/home/stop/11486",
+              "description": "Northbound stop in Portland (Stop ID 11486)"
+            }
+          },
+          "arrival": {
+            "time": "2026-04-24T06:37:00-07:00",
+            "place": {
+              "name": "NW 6th & Flanders",
+              "type": "station",
+              "location": {
+                "lat": 45.525725,
+                "lng": -122.676441
+              },
+              "wheelchairAccessible": "yes",
+              "id": "3930_5446",
+              "code": "9300",
+              "url": "https://trimet.org/home/stop/9300",
+              "description": "Northbound stop in Portland (Stop ID 9300)"
+            }
+          },
+          "polyline": "BHoz3jkbvj1-jpC4gdk3PsgMw7FojYsoNg4N8xHoqcs6Os-WwyMkzb4jPsd0tBk8K00F80D8Vw2oBn4Bg4IjI",
+          "transport": {
+            "mode": "bus",
+            "name": "FX2",
+            "category": "Bus",
+            "color": "#61A60E",
+            "textColor": "#000000",
+            "headsign": "NW 5th & Hoyt",
+            "shortName": "FX2",
+            "longName": "Division",
+            "wheelchairAccessible": "yes",
+            "url": "https://trimet.org/schedules/r002.htm"
+          },
+          "agency": {
+            "id": "3930_be7719c",
+            "name": "TriMet",
+            "website": "https://trimet.org/"
+          }
+        },
+        {
+          "id": "R0-S2",
+          "type": "pedestrian",
+          "travelSummary": {
+            "duration": 360,
+            "length": 335
+          },
+          "departure": {
+            "time": "2026-04-24T06:37:00-07:00",
+            "place": {
+              "name": "NW 6th & Flanders",
+              "type": "station",
+              "location": {
+                "lat": 45.525725,
+                "lng": -122.676441
+              },
+              "wheelchairAccessible": "yes",
+              "id": "3930_5446",
+              "code": "9300",
+              "url": "https://trimet.org/home/stop/9300",
+              "description": "Northbound stop in Portland (Stop ID 9300)"
+            }
+          },
+          "arrival": {
+            "time": "2026-04-24T06:43:00-07:00",
+            "place": {
+              "name": "Portland",
+              "type": "station",
+              "location": {
+                "lat": 45.528724,
+                "lng": -122.676806
+              },
+              "id": "01085_1402",
+              "url": "https://www.amtrak.com/stations/pdx"
+            }
+          },
+          "polyline": "BHkq2qkbzn47jpCsy6BjkH",
+          "notices": [
+            {
+              "code": "simplePolyline"
+            }
+          ],
+          "spans": [
+            {
+              "walkAttributes": [
+                "indoor"
+              ]
+            }
+          ],
+          "transport": {
+            "mode": "pedestrian"
+          }
+        },
+        {
+          "id": "R0-S3",
+          "type": "transit",
+          "travelSummary": {
+            "duration": 12300,
+            "length": 285253
+          },
+          "departure": {
+            "time": "2026-04-24T06:45:00-07:00",
+            "place": {
+              "name": "Portland",
+              "type": "station",
+              "location": {
+                "lat": 45.528724,
+                "lng": -122.676806
+              },
+              "id": "01085_1402",
+              "url": "https://www.amtrak.com/stations/pdx"
+            }
+          },
+          "arrival": {
+            "time": "2026-04-24T10:10:00-07:00",
+            "place": {
+              "name": "Seattle",
+              "type": "station",
+              "location": {
+                "lat": 47.598445,
+                "lng": -122.330161
+              },
+              "id": "01085_481",
+              "url": "https://www.amtrak.com/stations/sea"
+            }
+          },
+          "polyline": "BH838skb3w17jpCvoW46avzEsiGr2Go0NvnFsxQ_qH8za7uB80S8uBwvGgrHowPs9Po-hB8iCwjCwrDg8BgrH0oB48KzwC0gFjkH41Br6E0wCvhX8uBvnFk4H3kMsiG_qHspPvuO05erwYo1FnhFsvgBzqUg2Tv2PsmE3pC0gF7uBk4H7G85I8iC8hKjNgzIryDksI_yI8gSrjhBw6NnjYsiGr-HsuF_qHwvGnlIg7sBv6wBojYnvX4gJruFg3L_iLwmN75IopGruFsuFnpGg6RrkZ4lnBr7fsiGn9GsxLznOswY3qd4wL7hKor_CvvsC89uB39lBk_Qj_Qo8OnoO0nOrhO8sRj7Swy6Dvq_Fg_HjgJw6NvmN4kM7lI4kMv7Fg6RvzEwrmBAoknH4hBg7J8uBgjLzoBwnoB8GstNgUspyB4Ns2pB8aksI3N4ub7akynE41BwuO08Bs1O04DohF8iCg2Tw6N4zRwlV4z5Bk5lC41kBsyrBg6R02T00F0gFw0fkxhBg5Zghb4szCgi5C0vKgjL4o4D4_-D44MkrQwqLotJorFg_CsoI8yEgrHgwC0_M41Bo8OjhBosRz4DwwqErlMsl3C_6Jkz0BrmEkgJruF42_Bv7Fozaz4Dgv2Er0W4iqE3rVsipBn1F0zNjNwyMzkDspP31BwnoBruF8jjDnwPk7Sr2G8sR3gJ4oKr2GksInpG4wL38K03L3gOg5kDjhtEw6Nn8O84QvuOguS3wL83gCroX4oKriGknSv6Ng7J75Ig_Hn5IgjuB3u-BonW7jdksI30Js0W3zWw97Bn4zB0j8E7rnEs3hB_ocsgWr1Owq5DzxgCgq6C38tB4jUjgJ48tB_5Rs7wF77-Bw7oBn0S4o1C_-qB05hCn2gBg9iDzzwBggjB3gOs_lCnjY4j3BnoOokQ3pC46a7G07xBw_DggjB4hBs6vCopGs6nBgzIginGk71B48K41Bw5Vg8BguS_T4szCj4H4nS4pCspPotEo37BwhXwq2C4mfgjL08B4xsD0sEsgWAk7SzgFooOnpG8wUrtNguSviPg7J3wL40Jv6Nw0fnkzB0jL_pPk_QjzRwmNjoK0mWvyMswY75I4qdv_D4vT_T825G71KoxtCopG0osCksIwyvB8uB82lB0kDg6R4xDknSg3G0y4BomjBk-YwmN4_VopG4vT4pCkyZv_DsoXrqHk_Q7tJ0-UjjP82lBr8Xs91Cz0oB0qU71K8-mBziT8wU_mJg6Rv7FwgfjwG80mGvuO86uNvgf42c39CgjLkN8lInGkp5G_lRor_CnxHs7iCnhFk2iDjkH4oK_7Bg7Jv3CogSnxHg6R3wL4gJn9G8tJjgJ88TnvX45nB744B05kDjz9E49zEjvqHo7nFrppI0_MjyZ0jL_sa0nxBr8lEo0Nv4dwmNzuXgiTvgfojYrnf4yhCv8jCwiyB_50Bo7WzmWg7JnlIwogB_wYowgFri0DohFn5Dkn4C_wgC8xM38K0jL7pLwse7yiBk8tB782B00rCng4Cs4UroX4sN7xM85IjwGs9PjgJk4HzkDgnJzkDk77D3qdo4QvnF03uBvxUw2yBv5V8tsB_hT07xBvtWgzrB3_Vo9GvrDkkH39Cs1On1FogsIv-5D8h7Er3kCw7oBnwPwnrC70S0zzC_mJgzI39C8ilBn1FsoXruFoza_mJ8hKr6Ew2yB32ck2X7pLgnsB7pL85zCrpPo3Yv3C4ub7Gonbs-Cw_pCwiP48K8akvT_nB0zwBj4HshxBz7JwznB_6J4qd_6J0zN75I00oB3jU4i_B7ilBo-kC71tBgiTz7OksI7xHw-LjoK4_VjiXwlVv9Ys9PzyV03L3zRkgJv2Pk4H3wLshxBz3xCgnJj8KshOvmNw7FryD81K7qDkz3Cr5vBk_Q3kMstN3kM8pLzzN8plI_o8Ks8X73dgyQ74Qg6RviP84Vv6NslMnpGotJzsEojY7lIggjBz0F0qUgUsxQ4pC4wuBspPoi3C4wf4nDwlB4wuBs9P4rVw_D0m8CosR80S4Nw6N7iCkqjD7_ZogN_nBwspD4wL8ioCsiG88T04DwqLsmEwhX4kMshO81Ks4Zk2Xwi1Ck_7CowyBg60Bg6Ro8OwuOolI8tJw_Dki_B4vTgiTsqHwtWk7N8mjB0iY0jLopGs5Rk8F0nJgoBk_Q_TslRnhF0q3B74VkizH3v5CkzR72C49lB3pCwsen9G8-pCn3Y8gS3pC80S8as1O8iC0_M4xD4jU85I8oTw-LwkoD8lzCwkdkyZoxHgzIwmNg6Rg2T8_ekjPwpTkoKg3LkrQkrQ0-U8sRs5MkgJssaspP8-hBk3P0phB8hKg9X82CohzD0oB88T8qDwiPo1FgrH0sEolIgjGw0fkic4zR0rMk0JsmE8sRw_Ds-H8a8sRz8BkrQjwGo4Q_uKo0sI3h4Gwp-C7yqCgmRnoOs89C31sCgnJ_2Gw6Nr2Gs9PrmEo4QAwgiC0vK81KgUw5V31B47S35Ewn8Gz0uDwvpB7oT8hKryD8-sD7nboz9BznOw_0E7ilBomgKnhwCgnJvrDs1O_qH0mWngS07J3wL87bzkmB84VrvgBw4d39lBk_Q3jUw6wB701B03L7pL4wLjgJgzIj8FwiPrqHknSvnF40J7akzR41BgzIgwCoz9B46assV0kDk2cvjConWvnFwy3CnwPkvOzgFg2T7hKoxHnhF4ubr0Woo5Cv9-Co8OrhO4otB_7kB86rCvh6Bo9Gr6E84Qn5Is9PriGwzqC7gS0rMruF0zNnlI4wL7hKs9PvxU8tJj_QsvgBvojCohFn5I4wLjrQs1OvuO89L7lIg_Hz4DkzRr6Ek3P_To2gB8iC0_M_vCokQjwGgmRzzNs48B782B0qUvmNgnJ39Cs9Pr-C8jjD72C013Hn9Gk9gBjwG00rCrkZo3YnhF0yV3pCkz3C_Ts4Zo1FssVolI45tD8g1Bog1B06W0u6B0-UkwpBwyM4n6BkvTs8rGoqkCk_nHkn4CkliBkrQ0xdk_Q8vcguS4m2H09tF0iTkgJg6RwnFwmN41BwtW7G4wL8Go0S8G4zR4xD43UksI0mWk7N0wlB4ye0iY06W0qUogNkrQ00FgyQ0oBkzRvrDg2Tn1FwxU_mJ03LvvGoza_5R47S3zRovlEzlsE4kMzvKshOn5IwtWr2G8oTkhBglZs2Gs0hD0wlB8hhH8lzC8qpC4icg1bo8OokQ81K41kB83dwzyNo6jLsmsB8ilB09c06WkotBw3lBshO89L0_MgnJk_Qg_HokQ4xDslM8Gs1O3pCwuOvnF4kMjkHkkHruFgzIjsIkkH75IwiPz6WgnsBjtmCos6DvmhGkrQzyVskZ3ub4jUrxQ0tf3jU4nSjgJ06W_-H4jUn1FkzRzkDslMvzEogSzrM03L3kMohFjwGgnJviPgvKrgWw3CnxH81K35nBkkHrgWoxH_5Rs-Hn8O0j8E_z3G4vTv9YssVr0Wk0vC72oC85wBr-qBgonC7v_BwxUj_Q065B7htB8qmBjyZ43U7pL0iT75I4-d79LgiTruFo5rBj4H4k1Dv_DwtW31B4m8JnppBs-wDvuOg7J4Ns9yBn5DghbwjCkliBk4HwhXkgJo_Z85IohhRgupHwhrGwy3CsqqBkqYw9Ys9Kwkdk4Mw9TwqLgnJ45EkoKsyD0iTgjLguSo9Gsy0E4-gCoviDo-hBghbwyM8vcokQkq7B8ukBwruC4v2Bsnf0nOw2yBs0W4gJ82CwxZohF8s0BsiGslRs6Es1Os-HkgsBg4hBw24D068Ck-Ys8Xw6Ns1OgyQ88Tg9c0snBwjwDkxyF0h6I8wiOg1bsqqBg-P0pc8tJ8kV4lEwyMo8O83gColI4ic8lrBwvvD0yVs50Bw2P8nbkvOgiT4g0CgvwC4yhCor8Bo8O48K8wU8hK0zN4lE80Ss-CsjsNw6N89oJ48K09wGoxHwogBz8B87bzgFg2Tn9Ggl8B_4Zw1oFz1jCs8XvnFg9Xoa49kJs86B02qH8puB898O068C41yEsze4glHkotBgrqB4oKk4H0kDknSkoKgmRstNs1O0_MwmNwyM4t_H06tH4j3Bo4zBgr4E82uEo_Z0iY81K4wLkrQozVwmN06Ws4kIgzzRwwzCow0FgqPkliB0mWg3uBwu2L0yrZk74Cw-_Fov6B8ggEgiTsuoB0zNs8Xk3Pw5Vk3Pk_QshO89Lk74C0tiCsxQwqLkv8D02-C4qd09cw4d0hgB4kvB0_vB0u6B8n-BwjtCk0vCgzrBkotBk7Sg6RkqYk3P8pL04DkkH8agrH7aguSruFgiT3gJkkHvzEwvpBr_iB8pLn9Gk4HzkDkpgBv_DkhnCnxHo4Q3NwmN8uB44Ms6Ew-LkwGwtWkzR0sEw7Fkma88Tk-YkiX8lIgvK8qDkwGk8F88TgnJwp7BsuFo3Y0hgBg8qDkkHg2Tw_Do9GkoK4wL8yiBsze4lEo1Fk8FgjL49Cw-L0kD0-Uw8gB0mtHsuFsjhBwrDsxQk5iBoyrE8k4B4wiHwyvBshiGoxqBgtrFolI4yew_Dw-L48Ko_Zw-2C4quF0vKovXwvG4vTk2oFguxS8wUkhnCkkHguSkkHowP4kyCwssEo6uNo09W4lqCg28D4rsHs-yMonW4plBw7FksIstNk3P8xM81KsuFw_DwtW81Kw6NwrDkrQ8iCg33Ek_Q8oT4xD4ick4HwruC4qd0wlBwmNs4ZgrHstkH4g0C065BwmNghbs6EwpY8iC0pcAwznB39Cwr0ErtNoqsDj0J8khFnoO8jdA0-UwnFg_H0kD0zNo9GkjP0vKowPwuOk0J8hK0_Mk_QonWoigBg-U0tf40sBsvjCwiP06W4gJkjPgjL0iYk8FokQw7F0qUo_Zgi8DwrD0uX8uBsgW7Gs0W3pCssaruFo9pB_uKo5uCv-L8unCzkDw9YjN4sIgoBs8X8uB0zN0kDk3P4pCoxHkwGwmNs9PwpYs-Ck8FwnF0rMoxH06Ws2GspPgzI0rM4zRg-Pw7FopGkxhBw-zB0gF8hKsuF84Qo9Ggpc0sE8za41Bw2P4hBs1Oo1Fsp3Bg3LwuyD40J8v_BgU8xM41BkjP7GksI81Kg8qDjhBo_ZruFk4qB7uBozakhB43Uw3CogNwnFg6R03Lw3qBkhBwlV_TgzI7iCgvK7hKs6nBruFosR_nkBssjErtNshxB3lE07O32iDkhkLr8lE8snProuH0p6an88DwhlOvrDooOnlIsmsB_8Xw_3FruFk_zBzsEoqhB39CguSzrMoj7BzrM0u6Bv3CgiT4hBgsiBwrDs8X4lE0_Ms-CopG81KwiPksIkwG4_Vk4HssV4pC8hK7Gk1mU7uB885CAw4qW31B0zN8GgiT0wC0-UoxH40Js6E0opBghbgplEst4C4wLgjGg5ZoxHoza41Bo2xF7GwogB41B4xpCkNwrmB8G8ytDgUkgsB3hB83mE0U4g5M8iCs6EAoxtCkNglnE7uBgwrDrhOoo8DngSos0Bj4HoigB31Bon-B7G89uB_T8puB3wLwqL7uBgkpCA0q3BA4gOAolrB7Gk0yD8G8qpCAwgiCAwtnF7aw-5DA0toEAo88D0kD4_-D0kD4qgCr6Ek9oCzsE8_nEnxHs6qC0sEwiF0K4k5Bk7D0jLjNgqUruFkvOjsIk_Qr5M0v4Dno8Dw6NrpP8-mB72lBk--CnmmCs4Z7oT40J3sIs-H_mJ85I_2Ls2pB3poC0zN70Sk4Hn5I47S_lRk6a7oTwshC75rB0_M3wLs9yBvp7B4xpC3_7C8-mBryrB8n-B32_BksrBr-qB42cvxU8ggEzsqCgkpC3hpBw5vIzm_Dk0Jn1F8gSzzN8tJn5I0mW7rZo6pDnk-D89uB7g1Bwt5BzpkCgqUjiXowP34Mg_H_-HkkqB_utBov_B3-gCkjPr1O4rVjmaompD3ynEk2X_ocoxHv7Fo5InhF8hK7qDghbrqCkma8GkozDA4oK31BggjB7a4qdrqHsqqB8GwuO4pCw9TkN4jUgUgqUnGooO3pC8oTA0mW3Nw6NgU4qJwH0pNgsE86jBo9GozagrHgjuBwiP8mjB85IwwkCsmE",
+          "transport": {
+            "mode": "regionalTrain",
+            "name": "Amtrak Cascades",
+            "category": "Rail",
+            "color": "#CAE4F1",
+            "textColor": "#000000",
+            "headsign": "Seattle",
+            "longName": "Amtrak Cascades",
+            "url": "https://www.amtrak.com/cascades-train"
+          },
+          "agency": {
+            "id": "01085_031b4af",
+            "name": "Amtrak",
+            "website": "http://www.amtrak.com"
+          }
+        },
+        {
+          "id": "R0-S4",
+          "type": "pedestrian",
+          "travelSummary": {
+            "duration": 420,
+            "length": 163
+          },
+          "departure": {
+            "time": "2026-04-24T10:10:00-07:00",
+            "place": {
+              "name": "Seattle",
+              "type": "station",
+              "location": {
+                "lat": 47.598445,
+                "lng": -122.330161
+              },
+              "id": "01085_481",
+              "url": "https://www.amtrak.com/stations/sea"
+            }
+          },
+          "arrival": {
+            "time": "2026-04-24T10:17:00-07:00",
+            "place": {
+              "name": "Int'L Dist/Chinatown",
+              "type": "station",
+              "location": {
+                "lat": 47.598355,
+                "lng": -122.327992
+              },
+              "wheelchairAccessible": "yes",
+              "id": "22712_12573",
+              "url": "https://www.soundtransit.org/ride-with-us/stops-stations/international-district-chinatown-station",
+              "description": "International District/Chinatown Station - 5th Ave and S Jackson St Seattle, WA 98104"
+            }
+          },
+          "polyline": "BGi7l56CntuqpH9DvDrEoBjSTjDnB_YvC7B4rBT8aA0PnGAAwWAgZgFA4NTsEA4DA4ST8BAgFAkD8BAsEA0N",
+          "transport": {
+            "mode": "pedestrian"
+          }
+        },
+        {
+          "id": "R0-S5",
+          "type": "transit",
+          "travelSummary": {
+            "duration": 240,
+            "length": 1760
+          },
+          "departure": {
+            "time": "2026-04-24T10:17:00-07:00",
+            "place": {
+              "name": "Int'L Dist/Chinatown",
+              "type": "station",
+              "location": {
+                "lat": 47.598355,
+                "lng": -122.327992
+              },
+              "wheelchairAccessible": "yes",
+              "id": "22712_12573",
+              "platform": "1",
+              "url": "https://www.soundtransit.org/ride-with-us/stops-stations/international-district-chinatown-station",
+              "description": "International District/Chinatown Station - 5th Ave and S Jackson St Seattle, WA 98104"
+            }
+          },
+          "arrival": {
+            "time": "2026-04-24T10:21:00-07:00",
+            "place": {
+              "name": "Westlake",
+              "type": "station",
+              "location": {
+                "lat": 47.611572,
+                "lng": -122.33672
+              },
+              "wheelchairAccessible": "yes",
+              "id": "22712_12570",
+              "platform": "1",
+              "url": "https://www.soundtransit.org/ride-with-us/stops-stations/westlake-station",
+              "description": "Westlake Station - 4th Ave & Pine St Seattle, WA 98101"
+            }
+          },
+          "polyline": "BH8r37rcz6hn9oCk7SsEkiI3hBwuJzgF8qInlIo9GvqL44HzrMk7Nj3Pw4J7oJ0pX3kW4q7Bng1BggU3xS89kBnoiB82M38K45EjNw1DgwC0uIgyQsuF4_L",
+          "transport": {
+            "mode": "lightRail",
+            "name": "1 Line",
+            "category": "Tram, Streetcar, Light rail",
+            "color": "#28813F",
+            "textColor": "#FFFFFF",
+            "headsign": "Lynnwood City Center",
+            "shortName": "1 Line",
+            "longName": "Lynnwood - Federal Way",
+            "wheelchairAccessible": "yes",
+            "description": "1 Line runs between Lynnwood City Center Station and Federal Way Downtown Station seven days a week",
+            "url": "https://www.soundtransit.org/1"
+          },
+          "agency": {
+            "id": "22712_d59eced",
+            "name": "Sound Transit",
+            "website": "https://www.soundtransit.org"
+          }
+        },
+        {
+          "id": "R0-S6",
+          "type": "pedestrian",
+          "travelSummary": {
+            "duration": 60,
+            "length": 23
+          },
+          "departure": {
+            "time": "2026-04-24T10:21:00-07:00",
+            "place": {
+              "name": "Westlake",
+              "type": "station",
+              "location": {
+                "lat": 47.611572,
+                "lng": -122.33672
+              },
+              "wheelchairAccessible": "yes",
+              "id": "22712_12570",
+              "url": "https://www.soundtransit.org/ride-with-us/stops-stations/westlake-station",
+              "description": "Westlake Station - 4th Ave & Pine St Seattle, WA 98101"
+            }
+          },
+          "arrival": {
+            "time": "2026-04-24T10:22:00-07:00",
+            "place": {
+              "name": "Westlake Station Entrance A2 Elevator",
+              "type": "accessPoint",
+              "location": {
+                "lat": 47.611779,
+                "lng": -122.336704
+              },
+              "wheelchairAccessible": "yes"
+            }
+          },
+          "polyline": "BHww5jsc_hts9oCshEgK",
+          "notices": [
+            {
+              "code": "simplePolyline"
+            }
+          ],
+          "spans": [
+            {
+              "walkAttributes": [
+                "indoor"
+              ]
+            }
+          ],
+          "transport": {
+            "mode": "pedestrian"
+          }
+        },
+        {
+          "id": "R0-S7",
+          "type": "pedestrian",
+          "travelSummary": {
+            "duration": 120,
+            "length": 120
+          },
+          "departure": {
+            "time": "2026-04-24T10:22:00-07:00",
+            "place": {
+              "name": "Westlake Station Entrance A2 Elevator",
+              "type": "accessPoint",
+              "location": {
+                "lat": 47.611779,
+                "lng": -122.336704
+              },
+              "wheelchairAccessible": "yes"
+            }
+          },
+          "arrival": {
+            "time": "2026-04-24T10:24:00-07:00",
+            "place": {
+              "name": "Westlake Center",
+              "type": "station",
+              "location": {
+                "lat": 47.612046,
+                "lng": -122.33696
+              },
+              "id": "17889_1"
+            }
+          },
+          "polyline": "BG65_56Cl46qpH8QxP",
+          "transport": {
+            "mode": "pedestrian"
+          }
+        },
+        {
+          "id": "R0-S8",
+          "type": "transit",
+          "travelSummary": {
+            "duration": 180,
+            "length": 1502
+          },
+          "departure": {
+            "time": "2026-04-24T10:25:00-07:00",
+            "place": {
+              "name": "Westlake Center",
+              "type": "station",
+              "location": {
+                "lat": 47.612046,
+                "lng": -122.33696
+              },
+              "id": "17889_1"
+            }
+          },
+          "arrival": {
+            "time": "2026-04-24T10:28:00-07:00",
+            "place": {
+              "name": "Seattle Center",
+              "type": "station",
+              "location": {
+                "lat": 47.621263,
+                "lng": -122.349955
+              },
+              "id": "17889_0"
+            }
+          },
+          "polyline": "BHg6iksc32xs9oC8gI7iHomFzqF0xEj_G4rG_9K05K_jSwgL_oS0oL3vTkwLvzTkvJnwPokQnxb4iIrtN8tJ_xQg7JriQ42DzgFo5Dr8D0nE7lD4-EvoC0gFjmB0hM3IsxLkIo7CjSgrC3rBwyC3kC89Bz1CgjB7iCgZzmCwW7sCkSzmCkI70DzKj1GvgBnpQ",
+          "transport": {
+            "mode": "monorail",
+            "name": "Monorail",
+            "category": "Monorail",
+            "headsign": "Seattle Center",
+            "shortName": "Monorail",
+            "longName": "Seattle Center - Westlake",
+            "wheelchairAccessible": "yes"
+          },
+          "agency": {
+            "id": "17889_7b1a278",
+            "name": "Seattle Center Monorail",
+            "website": "http://www.seattlemonorail.com"
+          }
+        },
+        {
+          "id": "R0-S9",
+          "type": "pedestrian",
+          "travelSummary": {
+            "duration": 120,
+            "length": 120
+          },
+          "departure": {
+            "time": "2026-04-24T10:28:00-07:00",
+            "place": {
+              "name": "Seattle Center",
+              "type": "station",
+              "location": {
+                "lat": 47.621263,
+                "lng": -122.349955
+              },
+              "id": "17889_0"
+            }
+          },
+          "arrival": {
+            "time": "2026-04-24T10:30:00-07:00",
+            "place": {
+              "type": "place",
+              "location": {
+                "lat": 47.62049,
+                "lng": -122.3493
+              }
+            }
+          },
+          "polyline": "BG-oy66C3j1rpH5UAA8azFUzFwCzFApLY",
+          "transport": {
+            "mode": "pedestrian"
+          }
+        }
+      ]
+    },
+    {
+      "id": "R1",
+      "sections": [
+        {
+          "id": "R1-S0",
+          "type": "pedestrian",
+          "travelSummary": {
+            "duration": 600,
+            "length": 616
+          },
+          "departure": {
+            "time": "2026-04-24T06:21:00-07:00",
+            "place": {
+              "type": "place",
+              "location": {
+                "lat": 45.51179,
+                "lng": -122.67563
+              }
+            }
+          },
+          "arrival": {
+            "time": "2026-04-24T06:31:00-07:00",
+            "place": {
+              "name": "SW 6th & Columbia",
+              "type": "station",
+              "location": {
+                "lat": 45.514267,
+                "lng": -122.681095
+              },
+              "wheelchairAccessible": "yes",
+              "id": "3930_6278",
+              "code": "11486",
+              "url": "https://trimet.org/home/stop/11486",
+              "description": "Northbound stop in Portland (Stop ID 11486)"
+            }
+          },
+          "polyline": "BG-m652Ch7w_pH6ViMoQ_gCgPj6BkS7iCoGvWgK3mBwRv-BsEnQkN_xBqiBoT",
+          "transport": {
+            "mode": "pedestrian"
+          }
+        },
+        {
+          "id": "R1-S1",
+          "type": "transit",
+          "travelSummary": {
+            "duration": 360,
+            "length": 1337
+          },
+          "departure": {
+            "time": "2026-04-24T06:31:00-07:00",
+            "place": {
+              "name": "SW 6th & Columbia",
+              "type": "station",
+              "location": {
+                "lat": 45.514267,
+                "lng": -122.681095
+              },
+              "wheelchairAccessible": "yes",
+              "id": "3930_6278",
+              "code": "11486",
+              "url": "https://trimet.org/home/stop/11486",
+              "description": "Northbound stop in Portland (Stop ID 11486)"
+            }
+          },
+          "arrival": {
+            "time": "2026-04-24T06:37:00-07:00",
+            "place": {
+              "name": "NW 6th & Flanders",
+              "type": "station",
+              "location": {
+                "lat": 45.525725,
+                "lng": -122.676441
+              },
+              "wheelchairAccessible": "yes",
+              "id": "3930_5446",
+              "code": "9300",
+              "url": "https://trimet.org/home/stop/9300",
+              "description": "Northbound stop in Portland (Stop ID 9300)"
+            }
+          },
+          "polyline": "BHoz3jkbvj1-jpC4gdk3PsgMw7FojYsoNg4N8xHoqcs6Os-WwyMkzb4jPsd0tBk8K00F80D8Vw2oBn4Bg4IjI",
+          "transport": {
+            "mode": "bus",
+            "name": "FX2",
+            "category": "Bus",
+            "color": "#61A60E",
+            "textColor": "#000000",
+            "headsign": "NW 5th & Hoyt",
+            "shortName": "FX2",
+            "longName": "Division",
+            "wheelchairAccessible": "yes",
+            "url": "https://trimet.org/schedules/r002.htm"
+          },
+          "agency": {
+            "id": "3930_be7719c",
+            "name": "TriMet",
+            "website": "https://trimet.org/"
+          }
+        },
+        {
+          "id": "R1-S2",
+          "type": "pedestrian",
+          "travelSummary": {
+            "duration": 360,
+            "length": 335
+          },
+          "departure": {
+            "time": "2026-04-24T06:37:00-07:00",
+            "place": {
+              "name": "NW 6th & Flanders",
+              "type": "station",
+              "location": {
+                "lat": 45.525725,
+                "lng": -122.676441
+              },
+              "wheelchairAccessible": "yes",
+              "id": "3930_5446",
+              "code": "9300",
+              "url": "https://trimet.org/home/stop/9300",
+              "description": "Northbound stop in Portland (Stop ID 9300)"
+            }
+          },
+          "arrival": {
+            "time": "2026-04-24T06:43:00-07:00",
+            "place": {
+              "name": "Portland",
+              "type": "station",
+              "location": {
+                "lat": 45.528724,
+                "lng": -122.676806
+              },
+              "id": "01085_1402",
+              "url": "https://www.amtrak.com/stations/pdx"
+            }
+          },
+          "polyline": "BHkq2qkbzn47jpCsy6BjkH",
+          "notices": [
+            {
+              "code": "simplePolyline"
+            }
+          ],
+          "spans": [
+            {
+              "walkAttributes": [
+                "indoor"
+              ]
+            }
+          ],
+          "transport": {
+            "mode": "pedestrian"
+          }
+        },
+        {
+          "id": "R1-S3",
+          "type": "transit",
+          "travelSummary": {
+            "duration": 12300,
+            "length": 285253
+          },
+          "departure": {
+            "time": "2026-04-24T06:45:00-07:00",
+            "place": {
+              "name": "Portland",
+              "type": "station",
+              "location": {
+                "lat": 45.528724,
+                "lng": -122.676806
+              },
+              "id": "01085_1402",
+              "url": "https://www.amtrak.com/stations/pdx"
+            }
+          },
+          "arrival": {
+            "time": "2026-04-24T10:10:00-07:00",
+            "place": {
+              "name": "Seattle",
+              "type": "station",
+              "location": {
+                "lat": 47.598445,
+                "lng": -122.330161
+              },
+              "id": "01085_481",
+              "url": "https://www.amtrak.com/stations/sea"
+            }
+          },
+          "polyline": "BH838skb3w17jpCvoW46avzEsiGr2Go0NvnFsxQ_qH8za7uB80S8uBwvGgrHowPs9Po-hB8iCwjCwrDg8BgrH0oB48KzwC0gFjkH41Br6E0wCvhX8uBvnFk4H3kMsiG_qHspPvuO05erwYo1FnhFsvgBzqUg2Tv2PsmE3pC0gF7uBk4H7G85I8iC8hKjNgzIryDksI_yI8gSrjhBw6NnjYsiGr-HsuF_qHwvGnlIg7sBv6wBojYnvX4gJruFg3L_iLwmN75IopGruFsuFnpGg6RrkZ4lnBr7fsiGn9GsxLznOswY3qd4wL7hKor_CvvsC89uB39lBk_Qj_Qo8OnoO0nOrhO8sRj7Swy6Dvq_Fg_HjgJw6NvmN4kM7lI4kMv7Fg6RvzEwrmBAoknH4hBg7J8uBgjLzoBwnoB8GstNgUspyB4Ns2pB8aksI3N4ub7akynE41BwuO08Bs1O04DohF8iCg2Tw6N4zRwlV4z5Bk5lC41kBsyrBg6R02T00F0gFw0fkxhBg5Zghb4szCgi5C0vKgjL4o4D4_-D44MkrQwqLotJorFg_CsoI8yEgrHgwC0_M41Bo8OjhBosRz4DwwqErlMsl3C_6Jkz0BrmEkgJruF42_Bv7Fozaz4Dgv2Er0W4iqE3rVsipBn1F0zNjNwyMzkDspP31BwnoBruF8jjDnwPk7Sr2G8sR3gJ4oKr2GksInpG4wL38K03L3gOg5kDjhtEw6Nn8O84QvuOguS3wL83gCroX4oKriGknSv6Ng7J75Ig_Hn5IgjuB3u-BonW7jdksI30Js0W3zWw97Bn4zB0j8E7rnEs3hB_ocsgWr1Owq5DzxgCgq6C38tB4jUjgJ48tB_5Rs7wF77-Bw7oBn0S4o1C_-qB05hCn2gBg9iDzzwBggjB3gOs_lCnjY4j3BnoOokQ3pC46a7G07xBw_DggjB4hBs6vCopGs6nBgzIginGk71B48K41Bw5Vg8BguS_T4szCj4H4nS4pCspPotEo37BwhXwq2C4mfgjL08B4xsD0sEsgWAk7SzgFooOnpG8wUrtNguSviPg7J3wL40Jv6Nw0fnkzB0jL_pPk_QjzRwmNjoK0mWvyMswY75I4qdv_D4vT_T825G71KoxtCopG0osCksIwyvB8uB82lB0kDg6R4xDknSg3G0y4BomjBk-YwmN4_VopG4vT4pCkyZv_DsoXrqHk_Q7tJ0-UjjP82lBr8Xs91Cz0oB0qU71K8-mBziT8wU_mJg6Rv7FwgfjwG80mGvuO86uNvgf42c39CgjLkN8lInGkp5G_lRor_CnxHs7iCnhFk2iDjkH4oK_7Bg7Jv3CogSnxHg6R3wL4gJn9G8tJjgJ88TnvX45nB744B05kDjz9E49zEjvqHo7nFrppI0_MjyZ0jL_sa0nxBr8lEo0Nv4dwmNzuXgiTvgfojYrnf4yhCv8jCwiyB_50Bo7WzmWg7JnlIwogB_wYowgFri0DohFn5Dkn4C_wgC8xM38K0jL7pLwse7yiBk8tB782B00rCng4Cs4UroX4sN7xM85IjwGs9PjgJk4HzkDgnJzkDk77D3qdo4QvnF03uBvxUw2yBv5V8tsB_hT07xBvtWgzrB3_Vo9GvrDkkH39Cs1On1FogsIv-5D8h7Er3kCw7oBnwPwnrC70S0zzC_mJgzI39C8ilBn1FsoXruFoza_mJ8hKr6Ew2yB32ck2X7pLgnsB7pL85zCrpPo3Yv3C4ub7Gonbs-Cw_pCwiP48K8akvT_nB0zwBj4HshxBz7JwznB_6J4qd_6J0zN75I00oB3jU4i_B7ilBo-kC71tBgiTz7OksI7xHw-LjoK4_VjiXwlVv9Ys9PzyV03L3zRkgJv2Pk4H3wLshxBz3xCgnJj8KshOvmNw7FryD81K7qDkz3Cr5vBk_Q3kMstN3kM8pLzzN8plI_o8Ks8X73dgyQ74Qg6RviP84Vv6NslMnpGotJzsEojY7lIggjBz0F0qUgUsxQ4pC4wuBspPoi3C4wf4nDwlB4wuBs9P4rVw_D0m8CosR80S4Nw6N7iCkqjD7_ZogN_nBwspD4wL8ioCsiG88T04DwqLsmEwhX4kMshO81Ks4Zk2Xwi1Ck_7CowyBg60Bg6Ro8OwuOolI8tJw_Dki_B4vTgiTsqHwtWk7N8mjB0iY0jLopGs5Rk8F0nJgoBk_Q_TslRnhF0q3B74VkizH3v5CkzR72C49lB3pCwsen9G8-pCn3Y8gS3pC80S8as1O8iC0_M4xD4jU85I8oTw-LwkoD8lzCwkdkyZoxHgzIwmNg6Rg2T8_ekjPwpTkoKg3LkrQkrQ0-U8sRs5MkgJssaspP8-hBk3P0phB8hKg9X82CohzD0oB88T8qDwiPo1FgrH0sEolIgjGw0fkic4zR0rMk0JsmE8sRw_Ds-H8a8sRz8BkrQjwGo4Q_uKo0sI3h4Gwp-C7yqCgmRnoOs89C31sCgnJ_2Gw6Nr2Gs9PrmEo4QAwgiC0vK81KgUw5V31B47S35Ewn8Gz0uDwvpB7oT8hKryD8-sD7nboz9BznOw_0E7ilBomgKnhwCgnJvrDs1O_qH0mWngS07J3wL87bzkmB84VrvgBw4d39lBk_Q3jUw6wB701B03L7pL4wLjgJgzIj8FwiPrqHknSvnF40J7akzR41BgzIgwCoz9B46assV0kDk2cvjConWvnFwy3CnwPkvOzgFg2T7hKoxHnhF4ubr0Woo5Cv9-Co8OrhO4otB_7kB86rCvh6Bo9Gr6E84Qn5Is9PriGwzqC7gS0rMruF0zNnlI4wL7hKs9PvxU8tJj_QsvgBvojCohFn5I4wLjrQs1OvuO89L7lIg_Hz4DkzRr6Ek3P_To2gB8iC0_M_vCokQjwGgmRzzNs48B782B0qUvmNgnJ39Cs9Pr-C8jjD72C013Hn9Gk9gBjwG00rCrkZo3YnhF0yV3pCkz3C_Ts4Zo1FssVolI45tD8g1Bog1B06W0u6B0-UkwpBwyM4n6BkvTs8rGoqkCk_nHkn4CkliBkrQ0xdk_Q8vcguS4m2H09tF0iTkgJg6RwnFwmN41BwtW7G4wL8Go0S8G4zR4xD43UksI0mWk7N0wlB4ye0iY06W0qUogNkrQ00FgyQ0oBkzRvrDg2Tn1FwxU_mJ03LvvGoza_5R47S3zRovlEzlsE4kMzvKshOn5IwtWr2G8oTkhBglZs2Gs0hD0wlB8hhH8lzC8qpC4icg1bo8OokQ81K41kB83dwzyNo6jLsmsB8ilB09c06WkotBw3lBshO89L0_MgnJk_Qg_HokQ4xDslM8Gs1O3pCwuOvnF4kMjkHkkHruFgzIjsIkkH75IwiPz6WgnsBjtmCos6DvmhGkrQzyVskZ3ub4jUrxQ0tf3jU4nSjgJ06W_-H4jUn1FkzRzkDslMvzEogSzrM03L3kMohFjwGgnJviPgvKrgWw3CnxH81K35nBkkHrgWoxH_5Rs-Hn8O0j8E_z3G4vTv9YssVr0Wk0vC72oC85wBr-qBgonC7v_BwxUj_Q065B7htB8qmBjyZ43U7pL0iT75I4-d79LgiTruFo5rBj4H4k1Dv_DwtW31B4m8JnppBs-wDvuOg7J4Ns9yBn5DghbwjCkliBk4HwhXkgJo_Z85IohhRgupHwhrGwy3CsqqBkqYw9Ys9Kwkdk4Mw9TwqLgnJ45EkoKsyD0iTgjLguSo9Gsy0E4-gCoviDo-hBghbwyM8vcokQkq7B8ukBwruC4v2Bsnf0nOw2yBs0W4gJ82CwxZohF8s0BsiGslRs6Es1Os-HkgsBg4hBw24D068Ck-Ys8Xw6Ns1OgyQ88Tg9c0snBwjwDkxyF0h6I8wiOg1bsqqBg-P0pc8tJ8kV4lEwyMo8O83gColI4ic8lrBwvvD0yVs50Bw2P8nbkvOgiT4g0CgvwC4yhCor8Bo8O48K8wU8hK0zN4lE80Ss-CsjsNw6N89oJ48K09wGoxHwogBz8B87bzgFg2Tn9Ggl8B_4Zw1oFz1jCs8XvnFg9Xoa49kJs86B02qH8puB898O068C41yEsze4glHkotBgrqB4oKk4H0kDknSkoKgmRstNs1O0_MwmNwyM4t_H06tH4j3Bo4zBgr4E82uEo_Z0iY81K4wLkrQozVwmN06Ws4kIgzzRwwzCow0FgqPkliB0mWg3uBwu2L0yrZk74Cw-_Fov6B8ggEgiTsuoB0zNs8Xk3Pw5Vk3Pk_QshO89Lk74C0tiCsxQwqLkv8D02-C4qd09cw4d0hgB4kvB0_vB0u6B8n-BwjtCk0vCgzrBkotBk7Sg6RkqYk3P8pL04DkkH8agrH7aguSruFgiT3gJkkHvzEwvpBr_iB8pLn9Gk4HzkDkpgBv_DkhnCnxHo4Q3NwmN8uB44Ms6Ew-LkwGwtWkzR0sEw7Fkma88Tk-YkiX8lIgvK8qDkwGk8F88TgnJwp7BsuFo3Y0hgBg8qDkkHg2Tw_Do9GkoK4wL8yiBsze4lEo1Fk8FgjL49Cw-L0kD0-Uw8gB0mtHsuFsjhBwrDsxQk5iBoyrE8k4B4wiHwyvBshiGoxqBgtrFolI4yew_Dw-L48Ko_Zw-2C4quF0vKovXwvG4vTk2oFguxS8wUkhnCkkHguSkkHowP4kyCwssEo6uNo09W4lqCg28D4rsHs-yMonW4plBw7FksIstNk3P8xM81KsuFw_DwtW81Kw6NwrDkrQ8iCg33Ek_Q8oT4xD4ick4HwruC4qd0wlBwmNs4ZgrHstkH4g0C065BwmNghbs6EwpY8iC0pcAwznB39Cwr0ErtNoqsDj0J8khFnoO8jdA0-UwnFg_H0kD0zNo9GkjP0vKowPwuOk0J8hK0_Mk_QonWoigBg-U0tf40sBsvjCwiP06W4gJkjPgjL0iYk8FokQw7F0qUo_Zgi8DwrD0uX8uBsgW7Gs0W3pCssaruFo9pB_uKo5uCv-L8unCzkDw9YjN4sIgoBs8X8uB0zN0kDk3P4pCoxHkwGwmNs9PwpYs-Ck8FwnF0rMoxH06Ws2GspPgzI0rM4zRg-Pw7FopGkxhBw-zB0gF8hKsuF84Qo9Ggpc0sE8za41Bw2P4hBs1Oo1Fsp3Bg3LwuyD40J8v_BgU8xM41BkjP7GksI81Kg8qDjhBo_ZruFk4qB7uBozakhB43Uw3CogNwnFg6R03Lw3qBkhBwlV_TgzI7iCgvK7hKs6nBruFosR_nkBssjErtNshxB3lE07O32iDkhkLr8lE8snProuH0p6an88DwhlOvrDooOnlIsmsB_8Xw_3FruFk_zBzsEoqhB39CguSzrMoj7BzrM0u6Bv3CgiT4hBgsiBwrDs8X4lE0_Ms-CopG81KwiPksIkwG4_Vk4HssV4pC8hK7Gk1mU7uB885CAw4qW31B0zN8GgiT0wC0-UoxH40Js6E0opBghbgplEst4C4wLgjGg5ZoxHoza41Bo2xF7GwogB41B4xpCkNwrmB8G8ytDgUkgsB3hB83mE0U4g5M8iCs6EAoxtCkNglnE7uBgwrDrhOoo8DngSos0Bj4HoigB31Bon-B7G89uB_T8puB3wLwqL7uBgkpCA0q3BA4gOAolrB7Gk0yD8G8qpCAwgiCAwtnF7aw-5DA0toEAo88D0kD4_-D0kD4qgCr6Ek9oCzsE8_nEnxHs6qC0sEwiF0K4k5Bk7D0jLjNgqUruFkvOjsIk_Qr5M0v4Dno8Dw6NrpP8-mB72lBk--CnmmCs4Z7oT40J3sIs-H_mJ85I_2Ls2pB3poC0zN70Sk4Hn5I47S_lRk6a7oTwshC75rB0_M3wLs9yBvp7B4xpC3_7C8-mBryrB8n-B32_BksrBr-qB42cvxU8ggEzsqCgkpC3hpBw5vIzm_Dk0Jn1F8gSzzN8tJn5I0mW7rZo6pDnk-D89uB7g1Bwt5BzpkCgqUjiXowP34Mg_H_-HkkqB_utBov_B3-gCkjPr1O4rVjmaompD3ynEk2X_ocoxHv7Fo5InhF8hK7qDghbrqCkma8GkozDA4oK31BggjB7a4qdrqHsqqB8GwuO4pCw9TkN4jUgUgqUnGooO3pC8oTA0mW3Nw6NgU4qJwH0pNgsE86jBo9GozagrHgjuBwiP8mjB85IwwkCsmE",
+          "transport": {
+            "mode": "regionalTrain",
+            "name": "Amtrak Cascades",
+            "category": "Rail",
+            "color": "#CAE4F1",
+            "textColor": "#000000",
+            "headsign": "Seattle",
+            "longName": "Amtrak Cascades",
+            "url": "https://www.amtrak.com/cascades-train"
+          },
+          "agency": {
+            "id": "01085_031b4af",
+            "name": "Amtrak",
+            "website": "http://www.amtrak.com"
+          }
+        },
+        {
+          "id": "R1-S4",
+          "type": "pedestrian",
+          "travelSummary": {
+            "duration": 600,
+            "length": 358
+          },
+          "departure": {
+            "time": "2026-04-24T10:10:00-07:00",
+            "place": {
+              "name": "Seattle",
+              "type": "station",
+              "location": {
+                "lat": 47.598445,
+                "lng": -122.330161
+              },
+              "id": "01085_481",
+              "url": "https://www.amtrak.com/stations/sea"
+            }
+          },
+          "arrival": {
+            "time": "2026-04-24T10:20:00-07:00",
+            "place": {
+              "name": "Prefontaine Pl S & Yesler Way",
+              "type": "station",
+              "location": {
+                "lat": 47.601658,
+                "lng": -122.329941
+              },
+              "wheelchairAccessible": "yes",
+              "id": "22712_604",
+              "code": "1610"
+            }
+          },
+          "polyline": "BGi7l56CntuqpH9DvDvCvCjD_EnBjD7BnkBT3coLAgjBUoLU4cT8LAoLAozBTsE4D0K0F8LnLwHgF4S0KAkXAwWAkXA4S",
+          "transport": {
+            "mode": "pedestrian"
+          }
+        },
+        {
+          "id": "R1-S5",
+          "type": "transit",
+          "travelSummary": {
+            "duration": 420,
+            "length": 2457
+          },
+          "departure": {
+            "time": "2026-04-24T10:23:00-07:00",
+            "place": {
+              "name": "Prefontaine Pl S & Yesler Way",
+              "type": "station",
+              "location": {
+                "lat": 47.601658,
+                "lng": -122.329941
+              },
+              "wheelchairAccessible": "yes",
+              "id": "22712_604",
+              "code": "1610"
+            }
+          },
+          "arrival": {
+            "time": "2026-04-24T10:30:00-07:00",
+            "place": {
+              "name": "7th Ave N & Denny Way",
+              "type": "station",
+              "location": {
+                "lat": 47.619087,
+                "lng": -122.343445
+              },
+              "wheelchairAccessible": "yes",
+              "id": "10237_412",
+              "code": "6236"
+            }
+          },
+          "polyline": "BH0429rcn2po9oC0sErkKw0BnsC8upBz6lB875Br50Bo1yBrnuB4iSvvQo8Tz4Sk0E3kHw8C7rFk0TzkhBsxpBzlmCwrInjOs3mB8wyBgpDA8gSn2C8iC8iCgpIjI",
+          "transport": {
+            "mode": "bus",
+            "name": "E Line",
+            "category": "Bus",
+            "color": "#9C182F",
+            "textColor": "#FFFFFF",
+            "headsign": "Aurora Village Transit Center",
+            "shortName": "E Line",
+            "wheelchairAccessible": "yes",
+            "description": "Aurora Village Transit Center - Downtown Seattle",
+            "url": "https://kingcounty.gov/en/dept/metro/routes-and-service/schedules-and-maps/e-line.html"
+          },
+          "agency": {
+            "id": "10237_6b86b27",
+            "name": "Metro Transit",
+            "website": "https://kingcounty.gov/en/dept/metro"
+          }
+        },
+        {
+          "id": "R1-S6",
+          "type": "pedestrian",
+          "travelSummary": {
+            "duration": 600,
+            "length": 603
+          },
+          "departure": {
+            "time": "2026-04-24T10:30:00-07:00",
+            "place": {
+              "name": "7th Ave N & Denny Way",
+              "type": "station",
+              "location": {
+                "lat": 47.619087,
+                "lng": -122.343445
+              },
+              "wheelchairAccessible": "yes",
+              "id": "10237_412",
+              "code": "6236"
+            }
+          },
+          "arrival": {
+            "time": "2026-04-24T10:40:00-07:00",
+            "place": {
+              "type": "place",
+              "location": {
+                "lat": 47.62049,
+                "lng": -122.3493
+              }
+            }
+          },
+          "polyline": "BGkhu66Cx7nrpHoGNkhBvCAjNA7LAnkBU7VAjIAnLAvCA7kBAnpBAnGA_iBTjmBUn9BsErOgF_O0F3NTzFUzFkDrE4DnB4DoBwCsE8L7L6GP",
+          "transport": {
+            "mode": "pedestrian"
+          }
+        }
+      ]
+    },
+    {
+      "id": "R2",
+      "sections": [
+        {
+          "id": "R2-S0",
+          "type": "pedestrian",
+          "travelSummary": {
+            "duration": 420,
+            "length": 439
+          },
+          "departure": {
+            "time": "2026-04-24T08:04:00-07:00",
+            "place": {
+              "type": "place",
+              "location": {
+                "lat": 45.51179,
+                "lng": -122.67563
+              }
+            }
+          },
+          "arrival": {
+            "time": "2026-04-24T08:11:00-07:00",
+            "place": {
+              "name": "200 Block SW Harrison",
+              "type": "station",
+              "location": {
+                "lat": 45.510136,
+                "lng": -122.67893
+              },
+              "wheelchairAccessible": "yes",
+              "id": "3930_1643",
+              "code": "2567",
+              "url": "https://trimet.org/home/stop/2567",
+              "description": "Westbound stop in Portland (Stop ID 2567)"
+            }
+          },
+          "polyline": "BG-m652Ch7w_pHpV1LjXzP3IzFjhBrT_O3I7QrJnGjD_OjIoGzZgKjrB8L3wBwC1J",
+          "transport": {
+            "mode": "pedestrian"
+          }
+        },
+        {
+          "id": "R2-S1",
+          "type": "transit",
+          "travelSummary": {
+            "duration": 480,
+            "length": 1745
+          },
+          "departure": {
+            "time": "2026-04-24T08:11:00-07:00",
+            "place": {
+              "name": "200 Block SW Harrison",
+              "type": "station",
+              "location": {
+                "lat": 45.510136,
+                "lng": -122.67893
+              },
+              "wheelchairAccessible": "yes",
+              "id": "3930_1643",
+              "code": "2567",
+              "url": "https://trimet.org/home/stop/2567",
+              "description": "Westbound stop in Portland (Stop ID 2567)"
+            }
+          },
+          "arrival": {
+            "time": "2026-04-24T08:19:00-07:00",
+            "place": {
+              "name": "SW 6th & W Burnside",
+              "type": "station",
+              "location": {
+                "lat": 45.52288,
+                "lng": -122.676415
+              },
+              "wheelchairAccessible": "yes",
+              "id": "3930_4613",
+              "code": "7751",
+              "url": "https://trimet.org/home/stop/7751",
+              "description": "Northbound stop in Portland (Stop ID 7751)"
+            }
+          },
+          "polyline": "BH09khkb3ip9jpC44Hrwd4hBvmDgFr2Gw6I3nhBkwB71Fwr_BkqiB4gdk3PsgMw7F8_K4hGs7aw4Ooqcs6O07JwsF81oB4pWsd0tBswJkjF",
+          "transport": {
+            "mode": "bus",
+            "name": "40",
+            "category": "Bus",
+            "color": "#4679AA",
+            "textColor": "#FFFFFF",
+            "headsign": "Cutter Circle",
+            "shortName": "40",
+            "longName": "Tacoma/Swan Island",
+            "wheelchairAccessible": "yes",
+            "url": "https://trimet.org/schedules/r040.htm"
+          },
+          "agency": {
+            "id": "3930_be7719c",
+            "name": "TriMet",
+            "website": "https://trimet.org/"
+          }
+        },
+        {
+          "id": "R2-S2",
+          "type": "pedestrian",
+          "travelSummary": {
+            "duration": 660,
+            "length": 651
+          },
+          "departure": {
+            "time": "2026-04-24T08:19:00-07:00",
+            "place": {
+              "name": "SW 6th & W Burnside",
+              "type": "station",
+              "location": {
+                "lat": 45.52288,
+                "lng": -122.676415
+              },
+              "wheelchairAccessible": "yes",
+              "id": "3930_4613",
+              "code": "7751",
+              "url": "https://trimet.org/home/stop/7751",
+              "description": "Northbound stop in Portland (Stop ID 7751)"
+            }
+          },
+          "arrival": {
+            "time": "2026-04-24T08:30:00-07:00",
+            "place": {
+              "name": "Portland",
+              "type": "station",
+              "location": {
+                "lat": 45.528724,
+                "lng": -122.676806
+              },
+              "id": "01085_1402",
+              "url": "https://www.amtrak.com/stations/pdx"
+            }
+          },
+          "polyline": "BHg4-okbr337jpCwkyDr0H",
+          "notices": [
+            {
+              "code": "simplePolyline"
+            }
+          ],
+          "spans": [
+            {
+              "walkAttributes": [
+                "indoor"
+              ]
+            }
+          ],
+          "transport": {
+            "mode": "pedestrian"
+          }
+        },
+        {
+          "id": "R2-S3",
+          "type": "transit",
+          "travelSummary": {
+            "duration": 12300,
+            "length": 285253
+          },
+          "departure": {
+            "time": "2026-04-24T08:30:00-07:00",
+            "place": {
+              "name": "Portland",
+              "type": "station",
+              "location": {
+                "lat": 45.528724,
+                "lng": -122.676806
+              },
+              "id": "01085_1402",
+              "url": "https://www.amtrak.com/stations/pdx"
+            }
+          },
+          "arrival": {
+            "time": "2026-04-24T11:55:00-07:00",
+            "place": {
+              "name": "Seattle",
+              "type": "station",
+              "location": {
+                "lat": 47.598445,
+                "lng": -122.330161
+              },
+              "id": "01085_481",
+              "url": "https://www.amtrak.com/stations/sea"
+            }
+          },
+          "polyline": "BH838skb3w17jpCvoW46avzEsiGr2Go0NvnFsxQ_qH8za7uB80S8uBwvGgrHowPs9Po-hB8iCwjCwrDg8BgrH0oB48KzwC0gFjkH41Br6E0wCvhX8uBvnFk4H3kMsiG_qHspPvuO05erwYo1FnhFsvgBzqUg2Tv2PsmE3pC0gF7uBk4H7G85I8iC8hKjNgzIryDksI_yI8gSrjhBw6NnjYsiGr-HsuF_qHwvGnlIg7sBv6wBojYnvX4gJruFg3L_iLwmN75IopGruFsuFnpGg6RrkZ4lnBr7fsiGn9GsxLznOswY3qd4wL7hKor_CvvsC89uB39lBk_Qj_Qo8OnoO0nOrhO8sRj7Swy6Dvq_Fg_HjgJw6NvmN4kM7lI4kMv7Fg6RvzEwrmBAoknH4hBg7J8uBgjLzoBwnoB8GstNgUspyB4Ns2pB8aksI3N4ub7akynE41BwuO08Bs1O04DohF8iCg2Tw6N4zRwlV4z5Bk5lC41kBsyrBg6R02T00F0gFw0fkxhBg5Zghb4szCgi5C0vKgjL4o4D4_-D44MkrQwqLotJorFg_CsoI8yEgrHgwC0_M41Bo8OjhBosRz4DwwqErlMsl3C_6Jkz0BrmEkgJruF42_Bv7Fozaz4Dgv2Er0W4iqE3rVsipBn1F0zNjNwyMzkDspP31BwnoBruF8jjDnwPk7Sr2G8sR3gJ4oKr2GksInpG4wL38K03L3gOg5kDjhtEw6Nn8O84QvuOguS3wL83gCroX4oKriGknSv6Ng7J75Ig_Hn5IgjuB3u-BonW7jdksI30Js0W3zWw97Bn4zB0j8E7rnEs3hB_ocsgWr1Owq5DzxgCgq6C38tB4jUjgJ48tB_5Rs7wF77-Bw7oBn0S4o1C_-qB05hCn2gBg9iDzzwBggjB3gOs_lCnjY4j3BnoOokQ3pC46a7G07xBw_DggjB4hBs6vCopGs6nBgzIginGk71B48K41Bw5Vg8BguS_T4szCj4H4nS4pCspPotEo37BwhXwq2C4mfgjL08B4xsD0sEsgWAk7SzgFooOnpG8wUrtNguSviPg7J3wL40Jv6Nw0fnkzB0jL_pPk_QjzRwmNjoK0mWvyMswY75I4qdv_D4vT_T825G71KoxtCopG0osCksIwyvB8uB82lB0kDg6R4xDknSg3G0y4BomjBk-YwmN4_VopG4vT4pCkyZv_DsoXrqHk_Q7tJ0-UjjP82lBr8Xs91Cz0oB0qU71K8-mBziT8wU_mJg6Rv7FwgfjwG80mGvuO86uNvgf42c39CgjLkN8lInGkp5G_lRor_CnxHs7iCnhFk2iDjkH4oK_7Bg7Jv3CogSnxHg6R3wL4gJn9G8tJjgJ88TnvX45nB744B05kDjz9E49zEjvqHo7nFrppI0_MjyZ0jL_sa0nxBr8lEo0Nv4dwmNzuXgiTvgfojYrnf4yhCv8jCwiyB_50Bo7WzmWg7JnlIwogB_wYowgFri0DohFn5Dkn4C_wgC8xM38K0jL7pLwse7yiBk8tB782B00rCng4Cs4UroX4sN7xM85IjwGs9PjgJk4HzkDgnJzkDk77D3qdo4QvnF03uBvxUw2yBv5V8tsB_hT07xBvtWgzrB3_Vo9GvrDkkH39Cs1On1FogsIv-5D8h7Er3kCw7oBnwPwnrC70S0zzC_mJgzI39C8ilBn1FsoXruFoza_mJ8hKr6Ew2yB32ck2X7pLgnsB7pL85zCrpPo3Yv3C4ub7Gonbs-Cw_pCwiP48K8akvT_nB0zwBj4HshxBz7JwznB_6J4qd_6J0zN75I00oB3jU4i_B7ilBo-kC71tBgiTz7OksI7xHw-LjoK4_VjiXwlVv9Ys9PzyV03L3zRkgJv2Pk4H3wLshxBz3xCgnJj8KshOvmNw7FryD81K7qDkz3Cr5vBk_Q3kMstN3kM8pLzzN8plI_o8Ks8X73dgyQ74Qg6RviP84Vv6NslMnpGotJzsEojY7lIggjBz0F0qUgUsxQ4pC4wuBspPoi3C4wf4nDwlB4wuBs9P4rVw_D0m8CosR80S4Nw6N7iCkqjD7_ZogN_nBwspD4wL8ioCsiG88T04DwqLsmEwhX4kMshO81Ks4Zk2Xwi1Ck_7CowyBg60Bg6Ro8OwuOolI8tJw_Dki_B4vTgiTsqHwtWk7N8mjB0iY0jLopGs5Rk8F0nJgoBk_Q_TslRnhF0q3B74VkizH3v5CkzR72C49lB3pCwsen9G8-pCn3Y8gS3pC80S8as1O8iC0_M4xD4jU85I8oTw-LwkoD8lzCwkdkyZoxHgzIwmNg6Rg2T8_ekjPwpTkoKg3LkrQkrQ0-U8sRs5MkgJssaspP8-hBk3P0phB8hKg9X82CohzD0oB88T8qDwiPo1FgrH0sEolIgjGw0fkic4zR0rMk0JsmE8sRw_Ds-H8a8sRz8BkrQjwGo4Q_uKo0sI3h4Gwp-C7yqCgmRnoOs89C31sCgnJ_2Gw6Nr2Gs9PrmEo4QAwgiC0vK81KgUw5V31B47S35Ewn8Gz0uDwvpB7oT8hKryD8-sD7nboz9BznOw_0E7ilBomgKnhwCgnJvrDs1O_qH0mWngS07J3wL87bzkmB84VrvgBw4d39lBk_Q3jUw6wB701B03L7pL4wLjgJgzIj8FwiPrqHknSvnF40J7akzR41BgzIgwCoz9B46assV0kDk2cvjConWvnFwy3CnwPkvOzgFg2T7hKoxHnhF4ubr0Woo5Cv9-Co8OrhO4otB_7kB86rCvh6Bo9Gr6E84Qn5Is9PriGwzqC7gS0rMruF0zNnlI4wL7hKs9PvxU8tJj_QsvgBvojCohFn5I4wLjrQs1OvuO89L7lIg_Hz4DkzRr6Ek3P_To2gB8iC0_M_vCokQjwGgmRzzNs48B782B0qUvmNgnJ39Cs9Pr-C8jjD72C013Hn9Gk9gBjwG00rCrkZo3YnhF0yV3pCkz3C_Ts4Zo1FssVolI45tD8g1Bog1B06W0u6B0-UkwpBwyM4n6BkvTs8rGoqkCk_nHkn4CkliBkrQ0xdk_Q8vcguS4m2H09tF0iTkgJg6RwnFwmN41BwtW7G4wL8Go0S8G4zR4xD43UksI0mWk7N0wlB4ye0iY06W0qUogNkrQ00FgyQ0oBkzRvrDg2Tn1FwxU_mJ03LvvGoza_5R47S3zRovlEzlsE4kMzvKshOn5IwtWr2G8oTkhBglZs2Gs0hD0wlB8hhH8lzC8qpC4icg1bo8OokQ81K41kB83dwzyNo6jLsmsB8ilB09c06WkotBw3lBshO89L0_MgnJk_Qg_HokQ4xDslM8Gs1O3pCwuOvnF4kMjkHkkHruFgzIjsIkkH75IwiPz6WgnsBjtmCos6DvmhGkrQzyVskZ3ub4jUrxQ0tf3jU4nSjgJ06W_-H4jUn1FkzRzkDslMvzEogSzrM03L3kMohFjwGgnJviPgvKrgWw3CnxH81K35nBkkHrgWoxH_5Rs-Hn8O0j8E_z3G4vTv9YssVr0Wk0vC72oC85wBr-qBgonC7v_BwxUj_Q065B7htB8qmBjyZ43U7pL0iT75I4-d79LgiTruFo5rBj4H4k1Dv_DwtW31B4m8JnppBs-wDvuOg7J4Ns9yBn5DghbwjCkliBk4HwhXkgJo_Z85IohhRgupHwhrGwy3CsqqBkqYw9Ys9Kwkdk4Mw9TwqLgnJ45EkoKsyD0iTgjLguSo9Gsy0E4-gCoviDo-hBghbwyM8vcokQkq7B8ukBwruC4v2Bsnf0nOw2yBs0W4gJ82CwxZohF8s0BsiGslRs6Es1Os-HkgsBg4hBw24D068Ck-Ys8Xw6Ns1OgyQ88Tg9c0snBwjwDkxyF0h6I8wiOg1bsqqBg-P0pc8tJ8kV4lEwyMo8O83gColI4ic8lrBwvvD0yVs50Bw2P8nbkvOgiT4g0CgvwC4yhCor8Bo8O48K8wU8hK0zN4lE80Ss-CsjsNw6N89oJ48K09wGoxHwogBz8B87bzgFg2Tn9Ggl8B_4Zw1oFz1jCs8XvnFg9Xoa49kJs86B02qH8puB898O068C41yEsze4glHkotBgrqB4oKk4H0kDknSkoKgmRstNs1O0_MwmNwyM4t_H06tH4j3Bo4zBgr4E82uEo_Z0iY81K4wLkrQozVwmN06Ws4kIgzzRwwzCow0FgqPkliB0mWg3uBwu2L0yrZk74Cw-_Fov6B8ggEgiTsuoB0zNs8Xk3Pw5Vk3Pk_QshO89Lk74C0tiCsxQwqLkv8D02-C4qd09cw4d0hgB4kvB0_vB0u6B8n-BwjtCk0vCgzrBkotBk7Sg6RkqYk3P8pL04DkkH8agrH7aguSruFgiT3gJkkHvzEwvpBr_iB8pLn9Gk4HzkDkpgBv_DkhnCnxHo4Q3NwmN8uB44Ms6Ew-LkwGwtWkzR0sEw7Fkma88Tk-YkiX8lIgvK8qDkwGk8F88TgnJwp7BsuFo3Y0hgBg8qDkkHg2Tw_Do9GkoK4wL8yiBsze4lEo1Fk8FgjL49Cw-L0kD0-Uw8gB0mtHsuFsjhBwrDsxQk5iBoyrE8k4B4wiHwyvBshiGoxqBgtrFolI4yew_Dw-L48Ko_Zw-2C4quF0vKovXwvG4vTk2oFguxS8wUkhnCkkHguSkkHowP4kyCwssEo6uNo09W4lqCg28D4rsHs-yMonW4plBw7FksIstNk3P8xM81KsuFw_DwtW81Kw6NwrDkrQ8iCg33Ek_Q8oT4xD4ick4HwruC4qd0wlBwmNs4ZgrHstkH4g0C065BwmNghbs6EwpY8iC0pcAwznB39Cwr0ErtNoqsDj0J8khFnoO8jdA0-UwnFg_H0kD0zNo9GkjP0vKowPwuOk0J8hK0_Mk_QonWoigBg-U0tf40sBsvjCwiP06W4gJkjPgjL0iYk8FokQw7F0qUo_Zgi8DwrD0uX8uBsgW7Gs0W3pCssaruFo9pB_uKo5uCv-L8unCzkDw9YjN4sIgoBs8X8uB0zN0kDk3P4pCoxHkwGwmNs9PwpYs-Ck8FwnF0rMoxH06Ws2GspPgzI0rM4zRg-Pw7FopGkxhBw-zB0gF8hKsuF84Qo9Ggpc0sE8za41Bw2P4hBs1Oo1Fsp3Bg3LwuyD40J8v_BgU8xM41BkjP7GksI81Kg8qDjhBo_ZruFk4qB7uBozakhB43Uw3CogNwnFg6R03Lw3qBkhBwlV_TgzI7iCgvK7hKs6nBruFosR_nkBssjErtNshxB3lE07O32iDkhkLr8lE8snProuH0p6an88DwhlOvrDooOnlIsmsB_8Xw_3FruFk_zBzsEoqhB39CguSzrMoj7BzrM0u6Bv3CgiT4hBgsiBwrDs8X4lE0_Ms-CopG81KwiPksIkwG4_Vk4HssV4pC8hK7Gk1mU7uB885CAw4qW31B0zN8GgiT0wC0-UoxH40Js6E0opBghbgplEst4C4wLgjGg5ZoxHoza41Bo2xF7GwogB41B4xpCkNwrmB8G8ytDgUkgsB3hB83mE0U4g5M8iCs6EAoxtCkNglnE7uBgwrDrhOoo8DngSos0Bj4HoigB31Bon-B7G89uB_T8puB3wLwqL7uBgkpCA0q3BA4gOAolrB7Gk0yD8G8qpCAwgiCAwtnF7aw-5DA0toEAo88D0kD4_-D0kD4qgCr6Ek9oCzsE8_nEnxHs6qC0sEwiF0K4k5Bk7D0jLjNgqUruFkvOjsIk_Qr5M0v4Dno8Dw6NrpP8-mB72lBk--CnmmCs4Z7oT40J3sIs-H_mJ85I_2Ls2pB3poC0zN70Sk4Hn5I47S_lRk6a7oTwshC75rB0_M3wLs9yBvp7B4xpC3_7C8-mBryrB8n-B32_BksrBr-qB42cvxU8ggEzsqCgkpC3hpBw5vIzm_Dk0Jn1F8gSzzN8tJn5I0mW7rZo6pDnk-D89uB7g1Bwt5BzpkCgqUjiXowP34Mg_H_-HkkqB_utBov_B3-gCkjPr1O4rVjmaompD3ynEk2X_ocoxHv7Fo5InhF8hK7qDghbrqCkma8GkozDA4oK31BggjB7a4qdrqHsqqB8GwuO4pCw9TkN4jUgUgqUnGooO3pC8oTA0mW3Nw6NgU4qJwH0pNgsE86jBo9GozagrHgjuBwiP8mjB85IwwkCsmE",
+          "transport": {
+            "mode": "regionalTrain",
+            "name": "Amtrak Cascades",
+            "category": "Rail",
+            "color": "#CAE4F1",
+            "textColor": "#000000",
+            "headsign": "Seattle",
+            "longName": "Amtrak Cascades",
+            "url": "https://www.amtrak.com/cascades-train"
+          },
+          "agency": {
+            "id": "01085_031b4af",
+            "name": "Amtrak",
+            "website": "http://www.amtrak.com"
+          }
+        },
+        {
+          "id": "R2-S4",
+          "type": "pedestrian",
+          "travelSummary": {
+            "duration": 600,
+            "length": 358
+          },
+          "departure": {
+            "time": "2026-04-24T11:55:00-07:00",
+            "place": {
+              "name": "Seattle",
+              "type": "station",
+              "location": {
+                "lat": 47.598445,
+                "lng": -122.330161
+              },
+              "id": "01085_481",
+              "url": "https://www.amtrak.com/stations/sea"
+            }
+          },
+          "arrival": {
+            "time": "2026-04-24T12:05:00-07:00",
+            "place": {
+              "name": "Prefontaine Pl S & Yesler Way",
+              "type": "station",
+              "location": {
+                "lat": 47.601658,
+                "lng": -122.329941
+              },
+              "wheelchairAccessible": "yes",
+              "id": "22712_604",
+              "code": "1610"
+            }
+          },
+          "polyline": "BGi7l56CntuqpH9DvDvCvCjD_EnBjD7BnkBT3coLAgjBUoLU4cT8LAoLAozBTsE4D0K0F8LnLwHgF4S0KAkXAwWAkXA4S",
+          "transport": {
+            "mode": "pedestrian"
+          }
+        },
+        {
+          "id": "R2-S5",
+          "type": "transit",
+          "travelSummary": {
+            "duration": 420,
+            "length": 2457
+          },
+          "departure": {
+            "time": "2026-04-24T12:08:00-07:00",
+            "place": {
+              "name": "Prefontaine Pl S & Yesler Way",
+              "type": "station",
+              "location": {
+                "lat": 47.601658,
+                "lng": -122.329941
+              },
+              "wheelchairAccessible": "yes",
+              "id": "22712_604",
+              "code": "1610"
+            }
+          },
+          "arrival": {
+            "time": "2026-04-24T12:15:00-07:00",
+            "place": {
+              "name": "7th Ave N & Denny Way",
+              "type": "station",
+              "location": {
+                "lat": 47.619087,
+                "lng": -122.343445
+              },
+              "wheelchairAccessible": "yes",
+              "id": "10237_412",
+              "code": "6236"
+            }
+          },
+          "polyline": "BH0429rcn2po9oC0sErkKw0BnsC8upBz6lB875Br50Bo1yBrnuB4iSvvQo8Tz4Sk0E3kHw8C7rFk0TzkhBsxpBzlmCwrInjOs3mB8wyBgpDA8gSn2C8iC8iCgpIjI",
+          "transport": {
+            "mode": "bus",
+            "name": "E Line",
+            "category": "Bus",
+            "color": "#9C182F",
+            "textColor": "#FFFFFF",
+            "headsign": "Aurora Village Transit Center",
+            "shortName": "E Line",
+            "wheelchairAccessible": "yes",
+            "description": "Aurora Village Transit Center - Downtown Seattle",
+            "url": "https://kingcounty.gov/en/dept/metro/routes-and-service/schedules-and-maps/e-line.html"
+          },
+          "agency": {
+            "id": "10237_6b86b27",
+            "name": "Metro Transit",
+            "website": "https://kingcounty.gov/en/dept/metro"
+          }
+        },
+        {
+          "id": "R2-S6",
+          "type": "pedestrian",
+          "travelSummary": {
+            "duration": 600,
+            "length": 603
+          },
+          "departure": {
+            "time": "2026-04-24T12:15:00-07:00",
+            "place": {
+              "name": "7th Ave N & Denny Way",
+              "type": "station",
+              "location": {
+                "lat": 47.619087,
+                "lng": -122.343445
+              },
+              "wheelchairAccessible": "yes",
+              "id": "10237_412",
+              "code": "6236"
+            }
+          },
+          "arrival": {
+            "time": "2026-04-24T12:25:00-07:00",
+            "place": {
+              "type": "place",
+              "location": {
+                "lat": 47.62049,
+                "lng": -122.3493
+              }
+            }
+          },
+          "polyline": "BGkhu66Cx7nrpHoGNkhBvCAjNA7LAnkBU7VAjIAnLAvCA7kBAnpBAnGA_iBTjmBUn9BsErOgF_O0F3NTzFUzFkDrE4DnB4DoBwCsE8L7L6GP",
+          "transport": {
+            "mode": "pedestrian"
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "items": [
+    {
+      "title": "Space Needle",
+      "id": "here:pds:place:840c22yz-2854627f73084ba18b3c4617eab82385",
+      "resultType": "place",
+      "address": {
+        "label": "Space Needle, 400 Broad St, Seattle, WA 98109-4607, United States",
+        "countryCode": "USA",
+        "countryName": "United States",
+        "stateCode": "WA",
+        "state": "Washington",
+        "county": "King",
+        "city": "Seattle",
+        "district": "Lower Queen Anne",
+        "street": "Broad St",
+        "postalCode": "98109-4607",
+        "houseNumber": "400"
+      },
+      "position": {
+        "lat": 47.62049,
+        "lng": -122.3493
+      },
+      "access": [
+        {
+          "lat": 47.62019,
+          "lng": -122.3493
+        }
+      ],
+      "categories": [
+        {
+          "id": "300-3000-0023",
+          "name": "Tourist Attraction",
+          "primary": true
+        },
+        {
+          "id": "300-3100-0000",
+          "name": "Museum"
+        },
+        {
+          "id": "600-6900-0103",
+          "name": "Gift, Antique & Art"
+        }
+      ],
+      "scoring": {
+        "queryScore": 1.0,
+        "fieldScore": {
+          "placeName": 1.0
+        }
+      }
+    }
+  ]
+}
