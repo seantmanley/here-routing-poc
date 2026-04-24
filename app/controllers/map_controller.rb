@@ -1,4 +1,6 @@
 class MapController < ApplicationController
+  wrap_parameters false
+  
   def index
   end
 
