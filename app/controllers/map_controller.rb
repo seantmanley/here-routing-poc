@@ -20,7 +20,7 @@ class MapController < ApplicationController
 
   private
   def route_params
-    params.permit(:origin, :destination, :mode)
+    params.permit(:origin, :destination, :mode, :arrive_by, :leave_at)
   end
 
   def geocode_params

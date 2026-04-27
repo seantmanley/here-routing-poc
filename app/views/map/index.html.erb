@@ -1,11 +1,27 @@
 <form id="route-form">
   <input type="text" id="origin" placeholder="Origin" value="portland" />
   <input type="text" id="destination" placeholder="Destination" value="space needle" />
+
   <select id="mode">
     <option value="car">Drive</option>
     <option value="transit">Transit</option>
     <option value="taxi">Ride Share</option>
   </select>
+
+  <br>
+
+  <select id="time-type">
+    <option value="depart">Depart At</option>
+    <option value="arrive">Arrive By</option>
+  </select>
+
+  <label>
+    <input type="checkbox" id="now" checked />
+    Now
+  </label>
+
+  <input type="datetime-local" id="time" />
+
   <button type="submit">Get Route</button>
 </form>
 
@@ -20,105 +36,193 @@
 <link rel="stylesheet" href="https://js.api.here.com/v3/3.1/mapsjs-ui.css" />
 
 <script>
-    const platform = new H.service.Platform({
-        apikey: "<%= Rails.application.credentials.dig(:here, :api_key) %>"
+  const nowCheckbox = document.getElementById("now");
+  const timeInput = document.getElementById("time");
+  const timeType = document.getElementById("time-type");   
+
+  function setDefaultTime() {
+    const d = new Date();
+    d.setDate(d.getDate() + 1);
+
+    const local = new Date(d.getTime() - d.getTimezoneOffset() * 60000)
+      .toISOString()
+      .slice(0, 16);
+
+    timeInput.value = local;
+  }
+
+  function updateTimeState() {
+    if (nowCheckbox.checked) {
+      timeInput.disabled = true;
+    } else {
+      timeInput.disabled = false;
+      if (!timeInput.value) setDefaultTime();
+    }
+  }
+
+  setDefaultTime();
+  updateTimeState();
+
+  nowCheckbox.addEventListener("change", updateTimeState);
+
+  const platform = new H.service.Platform({
+    apikey: "<%= Rails.application.credentials.dig(:here, :api_key) %>"
+  });
+  
+  const defaultLayers = platform.createDefaultLayers({
+    pois: true
+  });
+
+  const map = new H.Map(
+    document.getElementById("map"), 
+    defaultLayers.vector.normal.map, {
+      center: { lat: 39.8333, lng: -98.5833 }, // center of usa
+      zoom: 4,
+      pixelRatio: window.devicePixelRatio || 1
     });
+  
+  const ui = H.ui.UI.createDefault(map, defaultLayers);
+  new H.mapevents.Behavior(new H.mapevents.MapEvents(map));
+
+  document.getElementById("route-form").addEventListener("submit", async (e) => {
+    e.preventDefault();
     
-    const defaultLayers = platform.createDefaultLayers({
-        pois: true
-    });
+    const origin = document.getElementById("origin").value;
+    const destination = document.getElementById("destination").value;
+    const mode = document.getElementById("mode").value;
 
-    const map = new H.Map(
-        document.getElementById("map"), 
-        defaultLayers.vector.normal.map, {
-            center: { lat: 39.8333, lng: -98.5833 }, // center of usa
-            zoom: 4,
-            pixelRatio: window.devicePixelRatio || 1
-        });
+    const useNow = nowCheckbox.checked;
+    const timeValue = useNow ? null : timeInput.value;
+    const typeValue = timeType.value;
     
-    const ui = H.ui.UI.createDefault(map, defaultLayers);
-    new H.mapevents.Behavior(new H.mapevents.MapEvents(map));
+    document.getElementById("route-list").innerHTML = "Loading...";
 
-    document.getElementById("route-form").addEventListener("submit", async (e) => {
-        e.preventDefault();
-        const origin = document.getElementById("origin").value;
-        const destination = document.getElementById("destination").value;
-        const mode = document.getElementById("mode").value;
-        
-        fetch("/route", {
-            method: "POST",
-            headers: {
-                "Content-Type": "application/json",
-                "X-CSRF-Token": document.querySelector('meta[name="csrf-token"]').content
-            },
-            body: JSON.stringify({ origin: origin, destination: destination, mode: mode })
-        })
-        .then(async (response) => {
-            const data = await response.json();
-            if (!response.ok) throw new Error(data.error || "Request failed");
-            return data;
-        })
-        .then(data => {
-            updateMap(data);
-            routeList(data);
-        })
-        .catch(error => {
-            alert(error.message);
-        });
+    const payload = {
+      origin: origin,
+      destination: destination,
+      mode: mode
+    };
+
+    if (!useNow && timeValue) {
+      if (typeValue == "depart") {
+        payload.leave_at = new Date(timeValue).toISOString();
+      } else {
+        payload.arrive_by = new Date(timeValue).toISOString();
+      };
+    };
+
+    fetch("/route", {
+      method: "POST",
+      headers: {
+          "Content-Type": "application/json",
+          "X-CSRF-Token": document.querySelector('meta[name="csrf-token"]').content
+      },
+      body: JSON.stringify(payload)
+    })
+    .then(async (response) => {
+      const data = await response.json();
+      if (!response.ok) throw new Error(data.error || "Request failed");
+      return data;
+    })
+    .then(data => {
+      updateMap(data);
+      routeList(data);
+    })
+    .catch(error => {
+      document.getElementById("route-list").innerHTML = "Error"
+      console.error(error.message);
     });
+  });
 
-    function clearMap() {
-        map.getObjects().forEach(obj => map.removeObject(obj));
-    }
+  function clearMap() {
+    map.getObjects().forEach(obj => map.removeObject(obj));
+  }
 
-    function updateMap(data, i = 0) {
-        clearMap();
+  function updateMap(data, i = 0) {
+    clearMap();
 
-        data.routes[i].sections.forEach(s => {
-            drawSegment(s);
-        });
-    }
+    data.routes[i].segments.forEach(s => {
+      drawSegment(s);
+    });
+  }
 
-    function drawSegment(s) {
-        const line = H.geo.LineString.fromFlexiblePolyline(s.polyline);
-        const routeLine = new H.map.Polyline(line, {
-            style: {
-                strokeColor: s.transport?.color || "#000",
-                lineWidth: 4,
-                lineJoin: "round",
-                lineCap: "round"
-            }
-        });
-        const caseLine = new H.map.Polyline(line, {
-            style: {
-                strokeColor: "#333",
-                lineWidth: routeLine.getStyle().lineWidth + 2,
-                lineJoin: "round",
-                lineCap: "round"
-            }
-        });
-        map.addObject(caseLine);
-        map.addObject(routeLine);
-    }
+  function drawSegment(s) {
+    const line = H.geo.LineString.fromFlexiblePolyline(s.polyline);
+    const routeLine = new H.map.Polyline(line, {
+      style: {
+        strokeColor: s.color,
+        lineWidth: 4,
+        lineJoin: "round",
+        lineCap: "round"
+      }
+    });
+    const caseLine = new H.map.Polyline(line, {
+      style: {
+        strokeColor: "#000",
+        lineWidth: routeLine.getStyle().lineWidth + 2,
+        lineJoin: "round",
+        lineCap: "round"
+      }
+    });
+    map.addObject(caseLine);
+    map.addObject(routeLine);
+  }
 
-    function routeList(data) {
-        const container = document.getElementById("route-list");
-        container.innerHTML = "";
-        data.routes.forEach((route, index) => {
-            const main = document.createElement("div");
-            const names = [...new Set(
-                (route.routeLabels ?? route.sections ?? [])
-                    .map(s => 
-                        route.routeLabels ? s.name?.value : s.agency?.name
-                    )
-                    .filter(Boolean)
-            )];
-            main.textContent = `Option ${index + 1}: ${names.join(", ")}`;
-            const button = document.createElement("button");
-            button.textContent = "Show on Map";
-            button.addEventListener("click", () => updateMap(data, index));
-            container.appendChild(main);
-            container.appendChild(button);
-        });
-    }
+  function routeList(data) {
+    const container = document.getElementById("route-list");
+    container.innerHTML = "";
+
+    data.routes.forEach((route, index) => {
+      const main = document.createElement("div");
+      main.innerHTML = `<strong>Option ${index + 1}: ${route.summary.labels}</strong>`;
+
+      const details = document.createElement("div");
+      const s = route.summary;
+
+      const formatNumber = (num) =>
+        num.toLocaleString();
+
+      const metersToMiles = (m) =>
+        (m / 1609.34);
+
+      const formatDuration = (seconds) => {
+        const d = Math.floor(seconds / 86400);
+        const h = Math.floor((seconds % 86400) / 3600);
+        const m = Math.floor((seconds % 3600) / 60);
+
+        return [
+          d ? `${d}d` : null,
+          h ? `${h}h` : null,
+          m ? `${m}m` : null
+        ].filter(Boolean).join(" ") || "0m";
+      };
+
+      const distanceMiles = metersToMiles(s.total_distance);
+
+      details.innerHTML = `
+        <div><strong>Distance:</strong> ${formatNumber(distanceMiles.toFixed(1))} miles</div>
+        <div><strong>Duration:</strong> ${formatDuration(s.total_duration)}</div>
+        ${
+          s.walking_distance > 0
+            ? `<div><strong>Walking:</strong> ${formatNumber(metersToMiles(s.walking_distance).toFixed(1))} miles • ${formatDuration(s.walking_duration)}</div>`
+            : ""
+        }
+        <div><strong>Departure:</strong> ${new Date(s.start.time).toLocaleString()}</div>
+        <div><strong>Arrival:</strong> ${new Date(s.end.time).toLocaleString()}</div>
+      `;
+
+      const button = document.createElement("button");
+      button.textContent = "Show on Map";
+      button.addEventListener("click", () => updateMap(data, index));
+
+      container.appendChild(main);
+      container.appendChild(details);
+      container.appendChild(button);
+      if (index < data.routes.length - 1) {
+        const hr = document.createElement("div");
+        hr.innerHTML = `<hr>`;
+        container.appendChild(hr);
+      };
+    });
+  }
 </script>

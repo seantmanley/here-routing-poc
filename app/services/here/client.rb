@@ -17,7 +17,7 @@ module Here
           query: query.merge(apiKey: api_key)
         )
         maybe_record(service, path, query, response.parsed_response)
-        handle_response(response)
+        handle_response(service, response)
       end
 
       def post(service, path, body: {})
@@ -32,7 +32,7 @@ module Here
           query: { apiKey: api_key }
         )
         maybe_record(service, path, body, response.parsed_response)
-        handle_response(response)
+        handle_response(service, response)
       end
 
       private
@@ -42,7 +42,8 @@ module Here
       end
 
       def stub_response(service, path, params)
-        raw = Stubs.fetch(service, path, query: params)
+        data = Stubs.fetch(service, path, query: params)
+        service == :geocode ? data : Normalizer.call(data)
       end
 
       def maybe_record(service, path, query, raw_response)
@@ -61,14 +62,14 @@ module Here
         Rails.application.credentials.dig(:here, :api_key)
       end
 
-      def handle_response(response)        
+      def handle_response(service, response)        
         unless response.success?
           message = response.parsed_response&.dig("error", "message") || response.body
           raise StandardError, message
         end
 
-        response.parsed_response
+        service == :geocode ? response.parsed_response : Normalizer.call(response.parsed_response)
       end
     end
   end
-end
+end 

@@ -27,6 +27,7 @@
 /tmp/storage/*
 !/tmp/storage/
 !/tmp/storage/.keep
+/spec/fixtures/here/*
 
 /public/assets
 

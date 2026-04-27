@@ -7,5 +7,10 @@ module Here
         query: { q: query }
       )
     end
+
+    def self.extract_coords(geocode)
+        pos = geocode["items"].first["position"]
+        "#{pos['lat']},#{pos['lng']}"
+    end
   end
 end
