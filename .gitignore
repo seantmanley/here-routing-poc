@@ -16,6 +16,9 @@
 !/log/.keep
 !/tmp/.keep
 
+# Ignore all stubfiles
+/spec/fixtures/here/*.json
+
 # Ignore pidfiles, but keep the directory.
 /tmp/pids/*
 !/tmp/pids/

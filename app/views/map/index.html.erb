@@ -198,17 +198,34 @@
       };
 
       const distanceMiles = metersToMiles(s.total_distance);
+      const costHtml = (s.total_cost || [])
+        .map(c => `${c.amount} [${c.currency}]`)
+        .join(" + ");
+
+      console.log(costHtml);
 
       details.innerHTML = `
-        <div><strong>Distance:</strong> ${formatNumber(distanceMiles.toFixed(1))} miles</div>
-        <div><strong>Duration:</strong> ${formatDuration(s.total_duration)}</div>
-        ${
-          s.walking_distance > 0
-            ? `<div><strong>Walking:</strong> ${formatNumber(metersToMiles(s.walking_distance).toFixed(1))} miles • ${formatDuration(s.walking_duration)}</div>`
+        <div><strong>Distance:</strong> ${formatNumber(distanceMiles.toFixed(1))} mi
+          ${s.walking_distance > 0
+            ? ` (Walking: ${formatNumber(metersToMiles(s.walking_distance).toFixed(1))} mi)`
             : ""
-        }
+          }
+        </div>
+        
+        <div><strong>Duration:</strong> ${formatDuration(s.total_duration)}
+          ${s.walking_duration > 0
+            ? ` (Walking: ${formatDuration(s.walking_duration)})`
+            : ""
+          }
+        </div>
+        
         <div><strong>Departure:</strong> ${new Date(s.start.time).toLocaleString()}</div>
         <div><strong>Arrival:</strong> ${new Date(s.end.time).toLocaleString()}</div>
+
+        ${costHtml
+          ? `<div><strong>Approx. Cost: </strong>${costHtml}</div>`
+          : ""
+        }
       `;
 
       const button = document.createElement("button");
