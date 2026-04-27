@@ -202,8 +202,6 @@
         .map(c => `${c.amount} [${c.currency}]`)
         .join(" + ");
 
-      console.log(costHtml);
-
       details.innerHTML = `
         <div><strong>Distance:</strong> ${formatNumber(distanceMiles.toFixed(1))} mi
           ${s.walking_distance > 0
