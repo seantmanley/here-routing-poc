@@ -2,7 +2,7 @@ require "active_support/core_ext/integer/time"
 
 Rails.application.configure do
   # Settings specified here will take precedence over those in config/application.rb.
-  config.here_api_mode = :record # :record || :live
+  config.here_api_mode = :stub # :record || :live
 
   # Make code changes take effect immediately without server restart.
   config.enable_reloading = true
